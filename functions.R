@@ -1,5 +1,6 @@
 vertices <- read.csv("texture_vertices.csv", stringsAsFactors = FALSE)
 
+# This function converts from percent texture to x coordinates
 tex.to.x <- function(sand.pct, clay.pct) {
   if (!is.numeric(sand.pct)) {
     stop("sand.pct must be a numeric value")
